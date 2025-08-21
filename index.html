@@ -9,63 +9,62 @@
       margin: 0;
       padding: 0;
       color: #2c3e50;
-      background: #ffffff;
+      background: #f4f6f9;
       line-height: 1.6;
     }
-    header {
+        header {
       text-align: center;
-      padding: 60px 20px 40px 20px;
-      background: linear-gradient(120deg, #1e3799, #4a69bd);
+      padding: 70px 20px 50px 20px; 
+      background: linear-gradient(120deg, #0a3d62, #3c6382);
       color: white;
     }
     header img {
-      width: 150px;
-      height: 150px;
+      width: 140px; 
+      height: 140px;
       border-radius: 50%;
       border: 4px solid white;
       margin-bottom: 20px;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.2em;
-      font-weight: 600;
-    }
-    header p {
-      font-size: 1.1em;
-      opacity: 0.9;
-    }
+
     section {
-      max-width: 800px;
+      max-width: 850px; 
       margin: 40px auto;
-      padding: 0 20px;
+      padding: 20px 30px;
+      background: white; 
+      border-radius: 12px; 
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
     section h2 {
-      border-bottom: 2px solid #e0e0e0;
-      padding-bottom: 6px;
+      border-bottom: 2px solid #dcdde1;
+      padding-bottom: 8px; 
       margin-bottom: 20px;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 1.4em;
     }
+
+    
     .links a {
       display: inline-block;
       margin: 8px 12px;
-      padding: 8px 16px;
+      padding: 10px 20px;
       text-decoration: none;
-      background: #2c3e50;
+      background: #0a3d62; 
       color: white;
-      border-radius: 6px;
+      border-radius: 25px; 
       font-size: 0.95em;
-      transition: background 0.3s;
+      transition: background 0.3s, transform 0.2s; 
     }
     .links a:hover {
-      background: #1a242f;
+      background: #1e6091;
+      transform: translateY(-2px); 
     }
+
+    /* ✅ [변경] 푸터: 흰색 → 다크 블루 */
     footer {
       text-align: center;
-      background: #f8f9fa;
-      color: #636e72;
+      background: #0a3d62;
+      color: white;
       padding: 20px;
-      border-top: 1px solid #e0e0e0;
       margin-top: 50px;
       font-size: 0.9em;
     }
@@ -82,6 +81,7 @@
     <h2>About Me</h2>
     <p>
       I am an AI researcher interested in deep learning, robotics, and trustworthy machine intelligence. 
+      
     </p>
   </section>
 
