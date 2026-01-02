@@ -30,18 +30,6 @@
       object-fit: cover;
     }
 
-    /* ✅ header 타이틀 크게 */
-    header h1{
-      font-size: 2.6em;
-      margin: 0;
-      letter-spacing: 0.2px;
-    }
-    header p{
-      font-size: 1.15em;
-      margin: 10px 0 0 0;
-      opacity: 0.95;
-    }
-
     section {
       max-width: 850px;
       margin: 40px auto;
@@ -51,51 +39,30 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
 
-    /* ✅ 섹션 제목 키움 */
     section h2 {
       border-bottom: 2px solid #dcdde1;
       padding-bottom: 8px;
       margin-bottom: 20px;
-      font-weight: 800;
-      font-size: 1.75em;
-      letter-spacing: 0.2px;
+      font-weight: 600;
+      font-size: 1.4em;
     }
 
-    /* Research/Project Experience 공통 */
+    /* Research Experience */
     .exp { margin-bottom: 26px; }
-
-    /* ✅ 항목 제목(h3) 키움 */
-    .exp h3 {
-      margin: 0 0 10px 0;
-      font-size: 1.32em;
-      font-weight: 800;
-      color: #1f2d3a;
-      line-height: 1.35;
-    }
-
-    .exp .org { font-weight: 550; color: #34495e; }
-
-    .exp .meta {
-      margin: 0 0 10px 0;
-      color: #576574;
-      font-size: 0.98em;
-    }
-
+    .exp h3 { margin: 0 0 10px 0; font-size: 1.05em; font-weight: 650; }
+    .exp .org { font-weight: 500; color: #34495e; }
+    .exp .meta { margin: 0 0 10px 0; color: #576574; font-size: 0.95em; }
     .exp ul { margin: 0; padding-left: 18px; }
     .exp li { margin: 6px 0; }
 
     /* Lab sub-items (no box) */
     .lab-item { margin-top: 10px; }
-
-    /* ✅ Lab 제목(h4) 키움 */
     .lab-item h4 {
       margin: 10px 0 6px 0;
-      font-size: 1.18em;
-      font-weight: 800;
+      font-size: 1em;
+      font-weight: 650;
       color: #0a3d62;
-      line-height: 1.35;
     }
-
     .lab-item p { margin: 0 0 10px 0; }
 
     /* Repo links (no box) */
@@ -106,12 +73,11 @@
       margin-right: 16px;
       color: #0a3d62;
       text-decoration: none;
-      font-weight: 650;
-      font-size: 1.02em;
+      font-weight: 500;
     }
     .repo-links a:hover { text-decoration: underline; }
 
-    /* ✅ Project spacing: 줄 간격은 기존 Project 느낌 유지 */
+    /* ✅ Project spacing: Research 형식(구조)은 맞추되, 줄 간격은 더 타이트하게 */
     .proj-exp { margin-bottom: 18px; }
     .proj-exp h3 { margin: 0 0 8px 0; }
     .proj-exp ul { margin: 0; padding-left: 18px; }
@@ -227,6 +193,7 @@
     </div>
   </section>
 
+  <!-- ✅ Project Experience: Research Experience처럼 exp 구조로 통일 -->
   <section id="projects">
     <h2>Project Experience</h2>
 
@@ -268,281 +235,7 @@
       <div class="repo-links">
         <a href="https://github.com/LeeHakHo/WorldcupPrediction" target="_blank" rel="noopener noreferrer">
           <svg style="width:10px; height:10px; vertical-align: middle; margin-right:6px;" viewBox="0 0 16 16" aria-hidden="true">
-            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02 
-```
-
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Hyeonho OH | AI Researcher</title>
-  <style>
-    body {
-      font-family: 'Helvetica Neue', sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #2c3e50;
-      background: #f4f6f9;
-      line-height: 1.6;
-    }
-
-    header {
-      text-align: center;
-      padding: 70px 20px 50px 20px;
-      background: linear-gradient(120deg, #0a3d62, #3c6382);
-      color: white;
-    }
-
-    header img {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      border: 4px solid white;
-      margin-bottom: 20px;
-      object-fit: cover;
-    }
-
-    /* ✅ Header 제목 키움 */
-    header h1{
-      font-size: 2.6em;
-      margin: 0;
-      letter-spacing: 0.2px;
-    }
-    header p{
-      font-size: 1.15em;
-      margin: 10px 0 0 0;
-      opacity: 0.95;
-    }
-
-    section {
-      max-width: 850px;
-      margin: 40px auto;
-      padding: 20px 30px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    }
-
-    /* ✅ 섹션 제목(h2) 키움 */
-    section h2 {
-      border-bottom: 2px solid #dcdde1;
-      padding-bottom: 8px;
-      margin-bottom: 20px;
-      font-weight: 800;
-      font-size: 1.75em;
-      letter-spacing: 0.2px;
-    }
-
-    /* Research/Project Experience 공통 */
-    .exp { margin-bottom: 26px; }
-
-    /* ✅ 항목 제목(h3) 키움 */
-    .exp h3 {
-      margin: 0 0 10px 0;
-      font-size: 1.32em;
-      font-weight: 800;
-      color: #1f2d3a;
-      line-height: 1.35;
-    }
-
-    .exp .org { font-weight: 550; color: #34495e; }
-
-    .exp .meta {
-      margin: 0 0 10px 0;
-      color: #576574;
-      font-size: 0.98em;
-    }
-
-    .exp ul { margin: 0; padding-left: 18px; }
-    .exp li { margin: 6px 0; }
-
-    /* Lab sub-items (no box) */
-    .lab-item { margin-top: 10px; }
-
-    /* ✅ Lab 제목(h4) 키움 */
-    .lab-item h4 {
-      margin: 10px 0 6px 0;
-      font-size: 1.18em;
-      font-weight: 800;
-      color: #0a3d62;
-      line-height: 1.35;
-    }
-
-    .lab-item p { margin: 0 0 10px 0; }
-
-    /* Repo links (no box) */
-    .repo-links { margin-top: 8px; }
-    .repo-links a {
-      display: inline-flex;
-      align-items: center;
-      margin-right: 16px;
-      color: #0a3d62;
-      text-decoration: none;
-      font-weight: 650;
-      font-size: 1.02em;
-    }
-    .repo-links a:hover { text-decoration: underline; }
-
-    /* ✅ Project spacing: 줄 간격은 project 느낌 유지 */
-    .proj-exp { margin-bottom: 18px; }
-    .proj-exp h3 { margin: 0 0 8px 0; }
-    .proj-exp ul { margin: 0; padding-left: 18px; }
-    .proj-exp li { margin: 5px 0; }
-    .proj-exp .repo-links { margin-top: 6px; }
-
-    /* Footer + main links */
-    .links a {
-      display: inline-block;
-      margin: 8px 12px;
-      padding: 10px 20px;
-      text-decoration: none;
-      background: #0a3d62;
-      color: white;
-      border-radius: 25px;
-      font-size: 0.95em;
-      transition: background 0.3s, transform 0.2s;
-    }
-    .links a:hover {
-      background: #1e6091;
-      transform: translateY(-2px);
-    }
-
-    footer {
-      text-align: center;
-      background: #0a3d62;
-      color: white;
-      padding: 20px;
-      margin-top: 50px;
-      font-size: 0.9em;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <img src="hyeonhoo_photo.jpeg" alt="Profile Photo">
-    <h1>Hyeonho Oh</h1>
-    <p>AI Researcher | Computer Vision | Robotics</p>
-  </header>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Hi there! I am a master student in Computer Science at the University of Southern Califorina.
-      I received my B.Eng. degree in Department of AI &amp; Software from Gachon University, Korea in 2025.
-    </p>
-  </section>
-
-  <section id="interests">
-    <h2>Research Interests</h2>
-    <ul>
-      <li>Vision-Language Models</li>
-      <li>Visual Understanding</li>
-      <li>Application of Visual Information to Hardware System</li>
-    </ul>
-  </section>
-
-  <section id="research">
-    <h2>Research Experience</h2>
-
-    <div class="exp">
-      <h3>Graduate Research Assistant <span class="org">— University of Southern California</span></h3>
-
-      <div class="lab-item">
-        <h4>GLAMOR Lab</h4>
-        <p>At the GLAMOR Lab, our research aims to advance robots’ perception, reasoning, and control capabilities. I’m developing a simulation testing suite to evaluate robot learning policies.</p>
-      </div>
-
-      <div class="lab-item">
-        <h4>Lira Lab</h4>
-        <p>At the Lira Lab, we develop algorithms for robot learning, safe and efficient human-robot interaction, and multi-agent systems. I’m developing a robust VLA model for imitation learning that can adapt to diverse environments.</p>
-      </div>
-    </div>
-
-    <div class="exp">
-      <h3>Intern <span class="org">— Electronics and Telecommunications Research Institute (ETRI)</span></h3>
-      <p class="meta">Visual Intelligence Research Section (Advisor: Dr. Hyung-Il Kim)</p>
-      <ul>
-        <li>Led a project focused on banner detection and text recognition affected by distortion, occlusion, and noise.</li>
-        <li>Analyzed large-scale language and image data from sources including AI-Hub, ICDAR, MJ, ST, KoBERT, and IIIT5K.</li>
-        <li>Identified a decrease in model accuracy during simultaneous multi-language training (English/Korean/Chinese).</li>
-        <li>Built an English-Korean bilingual dataset and developed a banner detection model based on TextBPN and CRAFT.</li>
-        <li>Constructed a contrastive learning structure to distinguish similar texts; applied CLIP and prompt tuning for inference/correction.</li>
-        <li>Contributed to IEIE publications/posters; continuing follow-up research and paper writing.</li>
-      </ul>
-
-      <div class="repo-links">
-        <a href="https://github.com/LeeHakHo/ETRI_Project" target="_blank" rel="noopener noreferrer">
-          <svg style="width:10px; height:10px; vertical-align: middle; margin-right:6px;" viewBox="0 0 16 16" aria-hidden="true">
             <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-          </svg>
-          Banner Detection
-        </a>
-
-        <a href="https://github.com/LeeHakHo/clipstr" target="_blank" rel="noopener noreferrer">
-          <svg style="width:10px; height:10px; vertical-align: middle; margin-right:6px;" viewBox="0 0 16 16" aria-hidden="true">
-            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-          </svg>
-          CLIPSTR
-        </a>
-      </div>
-    </div>
-
-    <div class="exp">
-      <h3>Undergraduate Research Assistant <span class="org">— Visual AI Lab, Gachon University</span></h3>
-      <p class="meta">Advisor: Prof. Jungchan Cho</p>
-      <ul>
-        <li>Worked in a vision AI lab that analyzed human states and detailed behaviors in videos for comprehensive situational understanding</li>
-        <li>Developed Video Swin Transformer model to classify human behavior among video objects using VIRAT dataset</li>
-        <li>Performed data augmentation and transformation on the Stanford40 and VIRAT dataset using PyTorch and OpenCV and implemented ResNet-based and Transformer-based models; compared, analyzed, and visualized the results using Grad-CAM, Weights &amp; Biases(wandb) and Matplotlib</li>
-        <li>Conducted weekly seminars to review papers and discuss progress with researchers and the professor</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2>Project Experience</h2>
-
-    <div class="exp proj-exp">
-      <h3>New Frontiers for Zero-shot for Image Captioning Evaluation (NICE) Challenge <span class="org">— CVPR'23</span></h3>
-      <ul>
-        <li>Enhanced the performance of OFA and mPLUG zero-shot captioning models, achieving improved accuracy on evaluation datasets, including COCOcaptions, Flickr30k, Conceptual Captions (CC3M), and LAION</li>
-        <li>Improved the model score using prompt learning and conducted experiments to compare captioning models</li>
-        <li>Refined base model predictions by feeding generated sentences into a secondary model to enhance accuracy</li>
-        <li>Utilized prompt tuning to guide the CLIP model in identifying appropriate words</li>
-      </ul>
-    </div>
-
-    <div class="exp proj-exp">
-      <h3>Korean Text Recognition Challenge <span class="org">— Korean Ministry of Science and ICT</span></h3>
-      <ul>
-        <li>Increased OCR generalization performance through an improved TRBA model</li>
-        <li>Improved the ResNet-based feature extractor with a SENet-based architecture</li>
-        <li>Applied sampling based on character frequency and employed ensemble methods to increase performance</li>
-        <li>Identified weak characters using Grad-CAM, built a focused dataset and improved accuracy through fine-tuning</li>
-      </ul>
-      <div class="repo-links">
-        <a href="https://github.com/LeeHakHo/TSBA" target="_blank" rel="noopener noreferrer">
-          <svg style="width:10px; height:10px; vertical-align: middle; margin-right:6px;" viewBox="0 0 16 16" aria-hidden="true">
-            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-          </svg>
-          TSBA
-        </a>
-      </div>
-    </div>
-
-    <div class="exp proj-exp">
-      <h3>Data Science Academic Presentation Contest <span class="org">— Gachon University</span></h3>
-      <ul>
-        <li>Predicted multiple matches in the Qatar World Cup, including Argentina's win, using match records and player stats-based machine learning algorithms</li>
-        <li>Combined and sampled datasets containing player attributes, match statistics, and player evaluations for comprehensive analysis</li>
-        <li>Visualized data and results using Matplotlib, scatter plots, and correlation maps</li>
-      </ul>
-      <div class="repo-links">
-        <a href="https://github.com/LeeHakHo/WorldcupPrediction" target="_blank" rel="noopener noreferrer">
-          <svg style="width:10px; height:10px; vertical-align: middle; margin-right:6px;" viewBox="0 0 16 16" aria-hidden="true">
-            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02 .08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
           </svg>
           Worldcup Prediction
         </a>
