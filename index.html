@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,26 +46,30 @@
       font-size: 1.4em;
     }
 
-    /* Research Experience */
-    .exp { margin-bottom: 26px; }
-    .exp h3 { margin: 0 0 10px 0; font-size: 1.05em; font-weight: 650; }
+    /* ✅ Research & Project 공통 구조: 줄 간격을 더 타이트하게 조정 */
+    .exp { margin-bottom: 18px; }
+    .exp h3 { 
+      margin: 0 0 8px 0; 
+      font-size: 1.15em; /* 중간 제목 크기 확대 */
+      font-weight: 650; 
+    }
     .exp .org { font-weight: 500; color: #34495e; }
-    .exp .meta { margin: 0 0 10px 0; color: #576574; font-size: 0.95em; }
+    .exp .meta { margin: 0 0 8px 0; color: #576574; font-size: 0.95em; }
     .exp ul { margin: 0; padding-left: 18px; }
-    .exp li { margin: 6px 0; }
+    .exp li { margin: 5px 0; } /* Project 스타일의 타이트한 간격 적용 */
 
-    /* Lab sub-items (no box) */
-    .lab-item { margin-top: 10px; }
+    /* Lab sub-items */
+    .lab-item { margin-top: 8px; }
     .lab-item h4 {
-      margin: 10px 0 6px 0;
-      font-size: 1em;
+      margin: 8px 0 4px 0;
+      font-size: 1.05em;
       font-weight: 650;
       color: #0a3d62;
     }
-    .lab-item p { margin: 0 0 10px 0; }
+    .lab-item p { margin: 0 0 8px 0; }
 
-    /* Repo links (no box) */
-    .repo-links { margin-top: 8px; }
+    /* Repo links */
+    .repo-links { margin-top: 6px; }
     .repo-links a {
       display: inline-flex;
       align-items: center;
@@ -74,15 +77,9 @@
       color: #0a3d62;
       text-decoration: none;
       font-weight: 500;
+      font-size: 0.95em;
     }
     .repo-links a:hover { text-decoration: underline; }
-
-    /* ✅ Project spacing: Research 형식(구조)은 맞추되, 줄 간격은 더 타이트하게 */
-    .proj-exp { margin-bottom: 18px; }
-    .proj-exp h3 { margin: 0 0 8px 0; }
-    .proj-exp ul { margin: 0; padding-left: 18px; }
-    .proj-exp li { margin: 5px 0; }
-    .proj-exp .repo-links { margin-top: 6px; }
 
     /* Footer + main links */
     .links a {
@@ -193,11 +190,10 @@
     </div>
   </section>
 
-  <!-- ✅ Project Experience: Research Experience처럼 exp 구조로 통일 -->
   <section id="projects">
     <h2>Project Experience</h2>
 
-    <div class="exp proj-exp">
+    <div class="exp">
       <h3>New Frontiers for Zero-shot for Image Captioning Evaluation (NICE) Challenge <span class="org">— CVPR'23</span></h3>
       <ul>
         <li>Enhanced the performance of OFA and mPLUG zero-shot captioning models, achieving improved accuracy on evaluation datasets, including COCOcaptions, Flickr30k, Conceptual Captions (CC3M), and LAION</li>
@@ -207,7 +203,7 @@
       </ul>
     </div>
 
-    <div class="exp proj-exp">
+    <div class="exp">
       <h3>Korean Text Recognition Challenge <span class="org">— Korean Ministry of Science and ICT</span></h3>
       <ul>
         <li>Increased OCR generalization performance through an improved TRBA model</li>
@@ -225,7 +221,7 @@
       </div>
     </div>
 
-    <div class="exp proj-exp">
+    <div class="exp">
       <h3>Data Science Academic Presentation Contest <span class="org">— Gachon University</span></h3>
       <ul>
         <li>Predicted multiple matches in the Qatar World Cup, including Argentina's win, using match records and player stats-based machine learning algorithms</li>
@@ -242,7 +238,7 @@
       </div>
     </div>
 
-    <div class="exp proj-exp" style="margin-bottom: 0;">
+    <div class="exp" style="margin-bottom: 0;">
       <h3>Graduation Project: Object Detection &amp; Human-Object Interaction (HOI) <span class="org">— Gachon Univ.</span></h3>
       <ul>
         <li>Built models to detect scene events between people and objects based on YOLO, FairMOT, and HOTR</li>
@@ -270,7 +266,7 @@
   <section id="Awards">
     <h2>Awards</h2>
     <ul>
-      <li><b>Outstanding Talent Award</b> issued by Gachon university</li>
+      <li><b>Outstanding Talent Award</b> issued by Gachon University</li>
       <li><b>Second Place of Korean Characters OCR AI Contest</b> issued by Korean Ministry of Science and ICT</li>
       <li><b>First Place, Academic Oral Presentation with Data Science</b> issued by Gachon University</li>
     </ul>
@@ -291,4 +287,3 @@
   </footer>
 </body>
 </html>
-```
