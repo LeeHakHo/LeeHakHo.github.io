@@ -49,14 +49,15 @@
     /* Common Exp Layout */
     .exp { margin-bottom: 22px; }
     .exp h3 { 
-      margin: 0 0 10px 0; 
+      margin: 0 0 4px 0; /* ✅ 대제목과 중간 제목 사이 간격을 10px에서 4px로 줄임 */
       font-size: 1.2em; 
       font-weight: 700; 
       color: #2c3e50;
     }
-    /* 조직명/소제목: 들여쓰기 제거 */
+    
+    /* ✅ 중간 제목(CVPR'23, 조직명 등) 스타일 수정 */
     .exp .org-line {
-      font-size: 1.05em;
+      font-size: 0.95em; /* ✅ 1.05em에서 0.95em으로 크기 축소 */
       font-weight: 600;
       color: #34495e;
       margin-bottom: 8px;
