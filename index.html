@@ -12,12 +12,14 @@
       background: #f4f6f9;
       line-height: 1.6;
     }
+
     header {
       text-align: center;
       padding: 70px 20px 50px 20px;
       background: linear-gradient(120deg, #0a3d62, #3c6382);
       color: white;
     }
+
     header img {
       width: 140px;
       height: 140px;
@@ -35,6 +37,7 @@
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
+
     section h2 {
       border-bottom: 2px solid #dcdde1;
       padding-bottom: 8px;
@@ -43,38 +46,37 @@
       font-size: 1.4em;
     }
 
-    /* Research Experience styling */
+    /* Research Experience */
     .exp { margin-bottom: 26px; }
-    .exp h3 { margin: 0 0 8px 0; font-size: 1.05em; font-weight: 650; }
+    .exp h3 { margin: 0 0 10px 0; font-size: 1.05em; font-weight: 650; }
     .exp .org { font-weight: 500; color: #34495e; }
     .exp .meta { margin: 0 0 10px 0; color: #576574; font-size: 0.95em; }
-
-    .subexp {
-      margin-top: 12px;
-      padding: 12px 14px;
-      background: #f8fafc;
-      border: 1px solid #e6e9ef;
-      border-radius: 10px;
-    }
-    .subexp h4 {
-      margin: 0 0 8px 0;
-      font-size: 1em;
-      color: #0a3d62;
-      font-weight: 650;
-    }
-
     .exp ul { margin: 0; padding-left: 18px; }
     .exp li { margin: 6px 0; }
 
-    .repo-links { margin-top: 10px; display: flex; gap: 14px; flex-wrap: wrap; }
-    .repo-links a {
-      display: inline-flex; align-items: center;
-      padding: 8px 12px; border-radius: 10px;
-      background: #f4f6f9; color: #0a3d62; text-decoration: none;
-      border: 1px solid #e6e9ef;
+    /* Lab sub-items (no box) */
+    .lab-item { margin-top: 10px; }
+    .lab-item h4 {
+      margin: 10px 0 6px 0;
+      font-size: 1em;
+      font-weight: 650;
+      color: #0a3d62;
     }
-    .repo-links a:hover { background: #eaf1f8; }
+    .lab-item p { margin: 0 0 10px 0; }
 
+    /* Repo links (no box) */
+    .repo-links { margin-top: 8px; }
+    .repo-links a {
+      display: inline-flex;
+      align-items: center;
+      margin-right: 16px;
+      color: #0a3d62;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .repo-links a:hover { text-decoration: underline; }
+
+    /* Footer + main links */
     .links a {
       display: inline-block;
       margin: 8px 12px;
@@ -128,30 +130,20 @@
   <section id="research">
     <h2>Research Experience</h2>
 
-    <!-- Graduate Research Assistant (Parent) -->
     <div class="exp">
       <h3>Graduate Research Assistant <span class="org">— University of Southern California</span></h3>
 
-      <!-- GLAMOR (Child) -->
-      <div class="subexp">
+      <div class="lab-item">
         <h4>GLAMOR Lab</h4>
-        <ul>
-          <li>At the GLAMOR Lab, our research aims to advance robots’ perception, reasoning, and control capabilities.</li>
-          <li>Developing a simulation testing suite to evaluate robot learning policies.</li>
-        </ul>
+        <p>At the GLAMOR Lab, our research aims to advance robots’ perception, reasoning, and control capabilities. I’m developing a simulation testing suite to evaluate robot learning policies.</p>
       </div>
 
-      <!-- LiRA (Child) -->
-      <div class="subexp">
-        <h4>LiRA Lab</h4>
-        <ul>
-          <li>Developing algorithms for robot learning, safe and efficient human-robot interaction, and multi-agent systems.</li>
-          <li>Building a robust VLA model for imitation learning that can adapt to diverse environments.</li>
-        </ul>
+      <div class="lab-item">
+        <h4>Lira Lab</h4>
+        <p>At the Lira Lab, we develop algorithms for robot learning, safe and efficient human-robot interaction, and multi-agent systems. I’m developing a robust VLA model for imitation learning that can adapt to diverse environments.</p>
       </div>
     </div>
 
-    <!-- ETRI -->
     <div class="exp">
       <h3>Intern <span class="org">— Electronics and Telecommunications Research Institute (ETRI)</span></h3>
       <p class="meta">Visual Intelligence Research Section (Advisor: Dr. Hyung-Il Kim)</p>
@@ -181,7 +173,6 @@
       </div>
     </div>
 
-    <!-- Gachon Visual AI Lab -->
     <div class="exp">
       <h3>Undergraduate Research Assistant <span class="org">— Visual AI Lab, Gachon University</span></h3>
       <p class="meta">Advisor: Prof. Jungchan Cho</p>
